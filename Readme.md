@@ -96,10 +96,6 @@ curl -X POST "http://localhost:5000/api/v1/students/1/status" \
   -b cookies.txt -H "X-CSRF-TOKEN: {token}" \
   -H "Content-Type: application/json" \
   -d '{"status":1}'
-
-# DELETE - Delete student
-curl -X DELETE "http://localhost:5000/api/v1/students/2" \
-  -b cookies.txt -H "X-CSRF-TOKEN: {token}"
 ```
 
 ### **Test Results Summary**
@@ -109,7 +105,6 @@ curl -X DELETE "http://localhost:5000/api/v1/students/2" \
 - ✅ **GET /students/:id**: Returns specific student data
 - ✅ **PUT /students/:id**: Updates student information
 - ✅ **POST /students/:id/status**: Status management working
-- ✅ **DELETE /students/:id**: Student deletion functional
 
 ---
 
