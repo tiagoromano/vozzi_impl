@@ -54,6 +54,17 @@
 
 ---
 
+## Adjust query for findAllStudents
+
+### **Before**
+```bash
+WHERE t1.role_id = 3 
+```
+### **After**
+```bash
+ WHERE t1.role_id = 1
+```
+
 ## 🧪 API Testing Results
 
 ### **Authentication**
